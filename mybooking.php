@@ -80,15 +80,15 @@ $result = $stmt->get_result();
                                         <strong>Total:</strong> <?php echo number_format($booking['total_price'], 0, '.', ','); ?> VND
                                     </p>
                                     <?php if($booking['status'] == "paid"): ?>
-                                        <button class="btn btn-secondary" disabled>Paid</button>
+                                        <button class="btn btn-success" disabled>Paid</button> <!-- Xanh lá cho Paid -->
                                     <?php elseif($booking['status'] == "cancelled"): ?>
-                                        <button class="btn btn-secondary" disabled>Cancelled</button>
+                                        <button class="btn btn-danger" disabled>Cancelled</button> <!-- Đỏ cho Cancelled -->
                                     <?php else: ?>
                                         <a href="booking/process_payment.php?booking_id=<?php echo $booking['booking_id']; ?>&total=<?php echo $booking['total_price']; ?>" 
-                                           class="btn btn-success">Pay</a>
+                                        class="btn btn-primary">Pay</a> <!-- Xanh dương cho Pay -->
                                         <a href="mybooking.php?action=cancel&booking_id=<?php echo $booking['booking_id']; ?>" 
-                                           class="btn btn-danger"
-                                           onclick="return confirm('Are you sure you want to cancel this booking?');">Cancel</a>
+                                        class="btn btn-warning"
+                                        onclick="return confirm('Are you sure you want to cancel this booking?');">Cancel</a> <!-- Vàng cho Cancel -->
                                     <?php endif; ?>
                                 </div>
                             </div>

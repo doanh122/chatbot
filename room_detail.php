@@ -133,10 +133,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (strtotime($check_in) >= strtotime($check_out)) {
       echo "<script>alert('Check-out date must be after check-in date.');</script>";
   } else {
-      $insert_query = "INSERT INTO bookings (user_id, room_id, check_in, check_out, adults, children, note, status) 
-                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+      // Calculate the total number of nights
+      $check_in_date = strtotime($check_in);
+      $check_out_date = strtotime($check_out);
+      $total_nights = ($check_out_date - $check_in_date) / (60 * 60 * 24); // Convert seconds to days
+
+      // Calculate total price (price per night * number of nights * number of adults)
+      $total_price = $room['price'] * $total_nights;;// * $adults;
+
+      // Insert the booking into the database
+      $insert_query = "INSERT INTO bookings (user_id, room_id, check_in, check_out, adults, children, note, status, total_price) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
       $stmt = $con->prepare($insert_query);
-      $stmt->bind_param("iissiiis", $user_id, $room_id, $check_in, $check_out, $adults, $children, $note, $status);
+      $stmt->bind_param("iissiiisi", $user_id, $room_id, $check_in, $check_out, $adults, $children, $note, $status, $total_price);
+
+      // $insert_query = "INSERT INTO bookings (user_id, room_id, check_in, check_out, adults, children, note, status) 
+      //                  VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+      // $stmt = $con->prepare($insert_query);
+      // $stmt->bind_param("iissiiis", $user_id, $room_id, $check_in, $check_out, $adults, $children, $note, $status);
 
       if ($stmt->execute()) {
           echo "<script>alert('Booking successful!'); window.location.href = 'mybooking.php';</script>";
