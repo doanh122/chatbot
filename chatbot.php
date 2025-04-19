@@ -34,7 +34,9 @@ curl_setopt_array($ch, [
         "Content-Type: application/json",
         "Authorization: Bearer " . OPENAI_API_KEY
     ],
-    CURLOPT_POSTFIELDS => json_encode($payload)
+    CURLOPT_POSTFIELDS => json_encode($payload),
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1
+
 ]);
 
 $response = curl_exec($ch);
