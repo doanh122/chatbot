@@ -1,0 +1,105 @@
+[CHECK-IN]
+Welcome to Hotel
+- Check-in time: starting from 14:00 daily.
+- If you arrive earlier than the designated check-in time, please contact the reception to see if a room is available. Early check-in may incur an additional fee.
+- Upon check-in, please present a valid form of identification (ID card, citizen identification, or passport).
+- Our reception staff are available to assist you with your luggage and to answer any inquiries about our hotel services.
+- If you have any special requests (e.g., ocean view, higher floor, etc.), please notify us in advance via email or phone.
+
+[CHECK-OUT]
+- Check-out time: before 12:00 daily.
+- Please complete all payment procedures before the check-out time. If you require a late check-out, kindly inform us at least 24 hours in advance so that proper arrangements can be made, which may include a late check-out fee.
+- Before leaving, please double-check your personal belongings. Any items left behind after check-out are not guaranteed to be kept.
+- The reception will assist you in printing the receipt and confirming the room condition during check-out.
+
+[REFUND POLICY]
+Refund and Cancellation Policy:
+- Cancellations made more than 48 hours before check-in: 100% refund of the deposit.
+- Cancellations made between 48 and 24 hours before check-in: 50% refund of the deposit.
+- Cancellations made within 24 hours before check-in: no refund.
+- In the event that the hotel cancels the reservation due to unforeseen circumstances (e.g., natural disasters, technical errors, etc.), you will receive a 100% refund or be offered a room of the same type as an alternative.
+- Please review the cancellation terms carefully when booking, as some promotional offers may be subject to different cancellation policies.
+
+[BOOKING GUIDE]
+Step-by-Step Booking Guide:
+Step 1: Visit the official website of Hotel XYZ or download the mobile application.
+Step 2: Log in to your personal account or register a new account if you do not have one.
+Step 3: Select your check-in and check-out dates, along with the number of guests. You can use advanced filters (room type, price, amenities) to find the room that suits your needs.
+Step 4: View the available room options in detail, compare prices, sizes, images, and read reviews from previous guests.
+Step 5: Choose your preferred room and click on "View Details" to check additional services (such as breakfast, room service, free Wi-Fi, etc.).
+Step 6: Fill in your contact information, any special requests (if applicable), and select your preferred payment method.
+Step 7: Complete the payment via the supported methods: credit card, bank transfer, e-wallet, or pay at the reception.
+Step 8: Once the booking is successful, you will receive a confirmation email and SMS with your booking code. Please save this code for future reference.
+Step 9: If you need further assistance, you may contact our hotline or use the online chat service on our website.
+
+[CANCELLATION]
+Cancellation Instructions:
+- You can cancel your booking through the account management system on our website or mobile app.
+- Log in to your personal account and navigate to the "Bookings" section to select the reservation you wish to cancel.
+- Click the “Cancel Booking” button and provide a reason for cancellation (if required) to complete the process.
+- If you are unable to cancel through the system, please contact our customer support hotline directly for assistance.
+- After a successful cancellation, you will receive a notification via email or SMS along with the refund details (if applicable).
+
+[ADDITIONAL SERVICES]
+Additional Services at the Hotel:
+- 24/7 Reception Service: Assistance with information, transportation bookings, tour arrangements, and any special requests you might have.
+- Wi-Fi: High-speed internet connection available free of charge in all areas of the hotel.
+- Room Service: Catering to all requests from meals to housekeeping during business hours.
+- Laundry: Quick and secure laundry services with in-house delivery within the hotel premises.
+- Airport Shuttle: Transportation services to and from the airport upon request. Please book at least 24 hours in advance.
+- Spa and Gym: Modern facilities for relaxation and fitness available for your leisure during your stay.
+- City Tours: Organized tours to explore the city and visit popular attractions, offered through our trusted partners.
+
+[AMENITIES & ROOM INFO]
+Room Amenities and Information:
+- All rooms at Hotel XYZ are equipped with air conditioning, cable TV, a minibar, and a safe.
+- Some premium rooms offer a private balcony with either a city or sea view.
+- Additional amenities include beverage services, 24/7 technical support, and a high level of security.
+- Room types: Single, Double, and Suite; each type has different pricing and room area. Please choose based on your requirements and the number of guests.
+
+[PROMOTIONS & DISCOUNTS]
+Promotions and Special Offers:
+- You can check our seasonal promotions or special event offers on the official website.
+- Special discounts are available for online bookings, early bird reservations, or package deals.
+- Loyalty Program: Earn reward points with each booking that can be redeemed for free services or discounts on future stays.
+- Exclusive offers are available for corporate clients and events, featuring discounted rates and modern conference facilities.
+
+[FAQ]
+Frequently Asked Questions:
+Q1: How can I modify or update my booking information?
+A1: You can log in to your account and update your booking details if the reservation has not yet been confirmed. Once confirmed, please contact our hotline for assistance.
+Q2: What percentage of the payment is required as a deposit when booking?
+A2: Typically, a deposit of about 30-50% of the room rate is required. The exact amount will be provided at the time of booking confirmation.
+Q3: If the hotel cancels my reservation due to unforeseen issues, how much will I be refunded?
+A3: In the event of a hotel cancellation due to our error, you will receive a 100% refund or be offered an alternative room of equivalent quality at no extra cost.
+Q4: Can promotions be combined with other services?
+A4: Some promotions may be applicable in combination with other services. Please refer to the detailed promotion information on our website or call our support line for advice.
+Q5: Can I upgrade my room after booking?
+A5: Room upgrades are subject to availability and the hotel's current upgrade policies, which may involve additional charges.
+Q6: Whom should I contact if I encounter issues when booking online?
+A6: In case of any difficulties, please contact our Hotel HIRO customer support via the hotline or email provided in the contact section.
+
+[CONTACT INFORMATION]
+Contact Information:
+- Support Hotline: 1900-1234 (available 24/7)
+- Support Email: support@hotelxyz.com
+- Website: www.hotelxyz.com
+- Address: 123 ABC Street, District 1, XYZ City
+- Social Media: Follow us on Facebook and Instagram for the latest promotions and events.
+
+[LEGAL & DISCLAIMER]
+- All information provided here is for reference only and is subject to change without prior notice.
+- Hotel XYZ is not responsible for any issues arising from outdated information.
+- Please verify your booking information via email or contact our support hotline before proceeding with check-in.
+
+[NOTICES & REMINDERS]
+Important Notices:
+- Please adhere to the hotel policies to ensure the comfort and safety of all guests.
+- Maintain cleanliness and observe general etiquette throughout your stay.
+- Should you have any questions or feedback, do not hesitate to contact the management for prompt assistance.
+
+[PETS]
+- My hotel does not allow pets.
+
+[CHANGE RESERVATION]
+You can go to the booking section and cancel the room you want to cancel. Then book a new room. Thank you.
