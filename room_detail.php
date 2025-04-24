@@ -46,27 +46,22 @@ $room_type = strtolower($room['room_type']);
   <h2 class="fw-bold text-center mb-4">Room Details</h2>
   <div class="row">
     <!-- Carousel -->
-    <div class="col-lg-6 mb-4">
-      <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/accom/<?= htmlspecialchars($room_type) ?>/main.jpg" class="d-block w-100" alt="Main Room Image" style="height: 400px; object-fit: cover;">
-          </div>
-          <div class="carousel-item">
-            <img src="images/accom/<?= htmlspecialchars($room_type) ?>/1.jpg" class="d-block w-100" alt="Image 1" style="height: 400px; object-fit: cover;">
-          </div>
-          <div class="carousel-item">
-            <img src="images/accom/<?= htmlspecialchars($room_type) ?>/2.jpg" class="d-block w-100" alt="Image 2" style="height: 400px; object-fit: cover;">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+<div class="col-lg-6 mb-4">
+  <div id="roomCarousel" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/accom/<?= htmlspecialchars($room_type) ?>/main.jpg" class="d-block w-100" alt="Main Room Image" style="height: 400px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/accom/<?= htmlspecialchars($room_type) ?>/1.jpg" class="d-block w-100" alt="Image 1" style="height: 400px; object-fit: cover;">
+      </div>
+      <div class="carousel-item">
+        <img src="images/accom/<?= htmlspecialchars($room_type) ?>/2.jpg" class="d-block w-100" alt="Image 2" style="height: 400px; object-fit: cover;">
       </div>
     </div>
+  </div>
+</div>
+
 
     <!-- Room Info -->
     <div class="col-lg-6">

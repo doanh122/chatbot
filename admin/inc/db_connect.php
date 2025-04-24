@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';       // Tên host, thường là localhost
-$db_name = 'hotel';     // Tên CSDL
+$db_name = 'final';     // Tên CSDL
 $user = 'root';            // Tên tài khoản
 $pass = '';                // Mật khẩu
 

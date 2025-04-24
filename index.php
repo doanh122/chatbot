@@ -331,8 +331,7 @@ if ($contact_r) {
    <div class="chatbot-icon" onclick="toggleChat()">💬</div>
   <iframe id="chatFrame" class="chatbot-frame" src="chat_ui.php"></iframe>
 
-  <!-- Footer + Scripts -->
-  <?php require('inc/footer.php'); ?>
+
 
   <script>
     // JavaScript toggle chatbot visibility

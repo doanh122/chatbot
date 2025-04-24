@@ -158,7 +158,7 @@ require('inc/header.php');
 
                     <div class="d-flex gap-2 mt-3">
                       <a href="room_detail.php?room_id=<?php echo $row['room_id']; ?>" class="btn btn-outline-dark">More Detail</a>
-                      <a href="booking.php?room_id=<?php echo $row['room_id']; ?>" class="btn btn-dark">Booking</a>
+                      <a href="booking.php?room_id=<?php echo $row['room_id']; ?>" class="btn btn-dark">Book Now</a>
                     </div>
                   </div>
                 </div>

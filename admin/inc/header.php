@@ -30,6 +30,9 @@
                         <a class="nav-link text-white" href="manage_bookings.php">Bookings</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="manage_payments.php">Payments</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="settings.php">Settings</a>
                     </li>
                 </ul>

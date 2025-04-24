@@ -4,6 +4,19 @@ session_start();
 
 echo "<script>alert('Payment successful!');</script>";
 
+// Kiểm tra xem booking_id có tồn tại trong bảng bookings không
+$booking_id = $_SESSION['bookingId'];
+$sql_check_booking = "SELECT * FROM bookings WHERE booking_id = ?";
+$stmt_check = $conn->prepare($sql_check_booking);
+$stmt_check->bind_param("i", $booking_id);
+$stmt_check->execute();
+$result_check = $stmt_check->get_result();
+
+if ($result_check->num_rows == 0) {
+    echo "<script>alert('Booking not found!'); window.location.href = 'mybooking.php';</script>";
+    die();
+}
+
 // Thêm thông tin thanh toán vào bảng Payments
 $insert_q = "INSERT INTO Payments (booking_id, amount, payment_method, status) VALUES (?,?,?,?)";
 $stmt2 = $conn->prepare($insert_q);
@@ -16,7 +29,6 @@ if ($stmt2 === false) {
 }
 
 $total = $_SESSION['amount'];
-$booking_id = $_SESSION['bookingId'];
 $payment_method = "Online";
 $status = "completed";
 

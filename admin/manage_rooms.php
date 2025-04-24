@@ -240,11 +240,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       <td><?php echo htmlspecialchars($row['price']); ?></td>
                       <td><?php echo htmlspecialchars($row['status']); ?></td>
                       <td style="width: 215px;"><?php echo htmlspecialchars($row['description']); ?></td>
+                      
                       <td>
                         <?php if (!empty($row['room_img'])): ?>
-                          <img src="../images/rooms/<?php echo htmlspecialchars($row['room_img']); ?>" alt="Room Image" style="max-width: 80px;">
+                          <img src="../images/accom/<?php echo htmlspecialchars($row['room_type']); ?>/<?php echo htmlspecialchars($row['room_img']); ?>" alt="Room Image" style="max-width: 80px;">
+                        <?php else: ?>
+                          <p>No image</p>
                         <?php endif; ?>
                       </td>
+
                       <td>
                         <a href="manage_rooms.php?action=edit&id=<?php echo $row['room_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                         <a href="manage_rooms.php?action=delete&id=<?php echo $row['room_id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this room?');">Delete</a>

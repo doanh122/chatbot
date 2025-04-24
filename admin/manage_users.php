@@ -1,5 +1,9 @@
 <?php
 require('inc/db_connect.php');
+// Kiểm tra kết nối cơ sở dữ liệu
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 // Process actions: delete, add, edit
 $action = isset($_GET['action']) ? $_GET['action'] : '';
@@ -202,47 +206,48 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="card">
           <div class="card-header bg-primary text-white">User List</div>
           <div class="card-body">
-            <?php
-              $sql = "SELECT user_id, full_name, username, email, phone, address, role, created_at FROM users";
-              $result = $conn->query($sql);
-              if ($result && $result->num_rows > 0):
-            ?>
-              <table class="table table-bordered table-hover">
-                <thead class="table-light">
-                  <tr>
-                    <th>ID</th>
-                    <th>Full Name</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Role</th>
-                    <th>Created At</th>
-                    <th>Actions</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <?php while($row = $result->fetch_assoc()): ?>
-                    <tr>
-                      <td><?php echo htmlspecialchars($row['user_id']); ?></td>
-                      <td><?php echo htmlspecialchars($row['full_name']); ?></td>
-                      <td><?php echo htmlspecialchars($row['username']); ?></td>
-                      <td><?php echo htmlspecialchars($row['email']); ?></td>
-                      <td><?php echo htmlspecialchars($row['phone']); ?></td>
-                      <td><?php echo htmlspecialchars($row['address']); ?></td>
-                      <td><?php echo htmlspecialchars($row['role']); ?></td>
-                      <td><?php echo htmlspecialchars($row['created_at']); ?></td>
-                      <td>
+          <?php
+$sql = "SELECT user_id, full_name, username, email, phone, address, role, created_at FROM users";
+$result = $conn->query($sql);
+
+if ($result && $result->num_rows > 0):
+?>
+    <table class="table table-bordered table-hover">
+        <thead class="table-light">
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Role</th>
+                <th>Created At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php while($row = $result->fetch_assoc()): ?>
+                <tr>
+                    <td><?php echo htmlspecialchars($row['user_id']); ?></td>
+                    <td><?php echo htmlspecialchars($row['full_name']); ?></td>
+                    <td><?php echo htmlspecialchars($row['username']); ?></td>
+                    <td><?php echo htmlspecialchars($row['email']); ?></td>
+                    <td><?php echo htmlspecialchars($row['phone']); ?></td>
+                    <td><?php echo htmlspecialchars($row['address']); ?></td>
+                    <td><?php echo htmlspecialchars($row['role']); ?></td>
+                    <td><?php echo htmlspecialchars($row['created_at']); ?></td>
+                    <td>
                         <a href="manage_users.php?action=edit&id=<?php echo $row['user_id']; ?>" class="btn btn-sm btn-warning">Edit</a>
                         <a href="manage_users.php?action=delete&id=<?php echo $row['user_id']; ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this user?');">Delete</a>
-                      </td>
-                    </tr>
-                  <?php endwhile; ?>
-                </tbody>
-              </table>
-            <?php else: ?>
-              <p class="text-center">No users found.</p>
-            <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endwhile; ?>
+        </tbody>
+    </table>
+<?php else: ?>
+    <p class="text-center">No users found.</p>
+<?php endif; ?>
           </div>
         </div>
         <div class="mt-3">

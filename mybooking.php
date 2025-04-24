@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiro Hotel - My Bookings</title>
+    <title>My Bookings</title>
     <?php require('inc/links.php'); ?>
     <style>
         .card-img-container {
@@ -28,6 +28,7 @@
 require('inc/header.php');
 $user_id = $_SESSION['user']['user_id'];
 
+// Lấy thông tin booking của người dùng
 $sql = "SELECT b.*, r.room_number, r.room_type, r.room_dientich, r.room_songuoi, r.price AS room_price 
         FROM Bookings b 
         JOIN Rooms r ON b.room_id = r.room_id 
@@ -56,17 +57,17 @@ $result = $stmt->get_result();
                                 <?php
                                 $room_number = $booking['room_number'];
                                 $room_type = strtolower($booking['room_type']); // room, suite, villa
-                                $room_img_path = "images/accom/room/{$room_number}.jpg";
+                                $room_img_path = "images/accom/{$room_type}/{$room_number}.jpg"; // Lấy ảnh phòng dựa vào room_number
 
                                 ?>
                                 <img src="<?php echo $room_img_path; ?>"
                                      class="img-fluid rounded-start"
                                      alt="Room Image"
-                                     onerror="this.onerror=null;this.src='images/101.jpg';">
+                                     onerror="this.onerror=null;this.src='images/101.jpg';"> <!-- Sử dụng ảnh mặc định nếu không có ảnh phòng -->
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?php echo $booking['room_type']; ?> (Room <?php echo $booking['room_number']; ?>)</h5>
+                                    <h5 class="card-title"><?php echo ucfirst($booking['room_type']); ?> (Room <?php echo $booking['room_number']; ?>)</h5>
                                     <p>
                                         <strong>Area:</strong> <?php echo $booking['room_dientich']; ?> <br>
                                         <strong>Capacity:</strong> Maximum <?php echo $booking['room_songuoi']; ?> people <br>

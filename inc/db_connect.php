@@ -12,3 +12,9 @@ if (!$conn) {
     die("Kết nối CSDL thất bại: " . mysqli_connect_error());
 }
 ?>
+
+
+
+
+
+
